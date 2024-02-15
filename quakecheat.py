@@ -36,7 +36,7 @@ def mouse_listener():
     with Listener(on_click=on_click) as listener:
         listener.join()
 
-# Запуск слухача миші в окремому потоці
+
 mouse_thread = threading.Thread(target=mouse_listener)
 mouse_thread.start()
 
